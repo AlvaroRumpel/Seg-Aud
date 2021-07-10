@@ -116,9 +116,9 @@ void loop() {
             client.print(",");
             client.print(minuto+10);
             client.print(",");
-            client.print("0");
+            client.print("Z");
             client.print(",");
-            client.println("N");
+            client.println("4");
             digitalWrite(vermelho, 0);
             digitalWrite(amarelo, 0);
             digitalWrite(verde, 1);
@@ -130,9 +130,9 @@ void loop() {
             client.print(",");
             client.print(minuto+10);
             client.print(",");
-            client.print("1");
+            client.print("B");
             client.print(",");
-            client.println("N");
+            client.println("7");
             digitalWrite(vermelho, 0);
             digitalWrite(amarelo, 1);
             digitalWrite(verde, 0);
@@ -144,9 +144,9 @@ void loop() {
             client.print(",");
             client.print(minuto+10);
             client.print(",");
-            client.print("2"); //nivel
+            client.print("X"); //nivel
             client.print(",");
-            client.println("S"); //emitir alerta
+            client.println("3"); //emitir alerta
             digitalWrite(vermelho, 1);
             digitalWrite(amarelo, 0);
             tone(buzzer, 261+contBeep);
